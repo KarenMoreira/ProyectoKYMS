@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.facci.proyectokyms.MainActivityKYMS">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textID"
+        android:text="ID" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="NOMBRE"
+        android:id="@+id/textNombre" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="APELLIDO"
+        android:id="@+id/textApellido" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="RECINTO ELECTORAL"
+        android:id="@+id/textRecintoElectoral" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="AÑO DE NACIMIENTO"
+        android:id="@+id/txtañoNacimiento" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText5" />
+
+    <GridLayout
+        android:layout_width="228dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INGRESAR"
+            android:id="@+id/button"
+            android:layout_row="0"
+            android:onClick="InsertarClick"
+            android:layout_column="0" />
+
+        <Button
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:text="MODIFICAR"
+            android:id="@+id/button2"
+            android:layout_row="0"
+            android:onClick="modificarRegistroClick"
+            android:layout_column="16" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ELIMINAR"
+            android:id="@+id/button3"
+            android:layout_row="3"
+            android:onClick="eliminarRegistroClick"
+            android:layout_column="0" />
+
+        <Button
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:text="BUSCAR TODOS"
+            android:id="@+id/button4"
+            android:layout_row="3"
+            android:onClick="verTodosClick"
+            android:layout_column="16" />
+    </GridLayout>
+</LinearLayout>
